@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivangi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    /* Background and Overlay */
+    #vanta-bg {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      z-index: -2;
+      top: 0;
+      left: 0;
+    }
+
+    #vanta-overlay {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Vanta.js Background -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<div id="vanta-bg"></div>
+<div id="vanta-overlay"></div>
+<script>
+  VANTA.NET({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    color: 0xff0077,
+    backgroundColor: 0x1e1e2f,
+    points: 12.0,
+    maxDistance: 25.0,
+    spacing: 15.0
+  });
+</script>
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+
+  </section>
+
+  <section id="home" class="section">
+    <div class="intro">
+      <h2 class="animated-text">Hi, I'm Shivangi Tiwari</h2>
+      <div class="buttons">
+        <a href="shivangi_resume.pdf" class="btn" download>Download Resume</a>
+        <a href="#contact" class="btn secondary">Get in Touch</a>
+      </div>
+      
+    </div>
+  </section>
+</header>
+<section>
+
+</section>
+
+<!-- Hero Summary -->
+<section id="ab" class="hero-text-section">
+  <div class="hero-text">
+    <p data-aos="fade-left">
+      Data Science and AI/ML Specialist with a robust analytical approach, proven experience in developing machine learning models, and integrating IoT solutions. Actively participated in international conferences, hackathons, and published research papers. Holds multiple certifications in AI, ML, and Data Science. Committed to continuous learning and applying data-driven decisions in IT environments.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>About Me</h2>
+</section>
+<!-- About -->
+<section id="about" class="section" ">
+  
+  <p data-aos="fade-left">In addition to technical expertise, I possess strong communication, teamwork, and leadership skills gained through hands-on projects and collaborative environments. I have qualified the National Eligibility Test (NET) twice, reflecting my academic rigor and deep understanding of computer science fundamentals. My proactive learning attitude and interdisciplinary knowledge enable me to bridge gaps between theory and real-world applications.</p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span class="tag python" data-skill="Python"></span>
+    <span class="tag ml" data-skill="Machine Learning"></span>
+    <span class="tag nlp" data-skill="Natural Language Processing"></span>
+    <span class="tag tensorflow" data-skill="TensorFlow"></span>
+    <span class="tag DeepLearning" data-skill="DeepLearning"></span>
+    <span class="tag sklearn" data-skill="Scikit-learn"></span>
+    <span class="tag Html" data-skill="HTML"></span>
+    <span class="tag css" data-skill="CSS"></span>
+    <span class="tag javascript" data-skill="JavaScript"></span>
+    <span class="tag Github" data-skill="GitHub"></span>
+    <span class="tag Dbms" data-skill="DBMS"></span>
+    <span class="tag powerbi" data-skill="Power BI"></span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2 class="neon-title">Projects</h2>
+  <div class="project-grid">
+    <div class="project-card_1">
+      <h4>🌾 Crop Prediction System</h4>
+      <p>Hybrid ML system with 99% accuracy for crop recommendation & yield.</p>
+      
+    </div>
+    <div class="project-card_2">
+      <h4>🌐 Voice Translator (NLP)</h4>
+      <p>Live language translator using LSTM, Google APIs, and voice-to-text.</p>
+    </div>
+    <div class="project-card_3">
+      <h4>🧠 Mental Health Detection</h4>
+      <p>Real-time ML model for mental health prediction using mixed-method data.</p>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="section" data-aos="fade-right">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>AI/ML Project – Crop Recommendation & Yield Prediction</h4>
+      <p><em>Jan – May 2024</em></p>
+      <p>Developed and deployed a real-time hybrid ML model for crop recommendation and yield prediction. Used Naïve Bayes (99.54%), Decision Tree, and Random Forest to optimize recommendations.Applied regression and classification algorithms (Lasso, SVM) to predict yields with 98% accuracy across 101 countries.Addressed challenges in data heterogeneity and computational scalability to ensure practical deployment.</p>
+      
+</div>
+
+    <div class="timeline-item">
+      <h4>NLP Intern – ABVV</h4>
+      <p><em>Feb – Apr 2024</em></p>
+      <p>
+        Designed and implemented a speech-based NLP translation system using LSTM-based neural networks and Google Cloud Speech APIs.
+        Preprocessed multilingual datasets, handled audio-to-text conversion, and applied sequence-to-sequence models for translation.
+        Optimized the pipeline for latency and scalability, achieving &lt; 1s response time.
+        Documented the entire system and assisted in deploying it within an interactive web application.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section" data-aos="fade-left">
+  <h2 style="color: #4dd0e1; text-align: center; margin-bottom: 30px;">Education & Qualifications</h2>
+  <div class="edu-cards">
+
+    <div class="edu-card">
+      <h3>UGC-NET (June & Dec 2024)</h3>
+      <p class="institution">NTA – Computer Science & Applications</p>
+      <p>Qualified for lectureship and research positions in two consecutive cycles.</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>MCA</h3>
+      <p class="institution">Atal Bihari Vajpayee Vishwavidyalaya (2022–2024)</p>
+      <p>Graduated with 80%. Focused on AI, ML, and NLP with real-time project experience.</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>BSc in Computer Science</h3>
+      <p class="institution">Govt. E. Raghvendra Rao PG Science College (2019–2022)</p>
+      <p>Completed with First Class. Built a strong foundation in algorithms and systems.</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>Higher Secondary</h3>
+      <p class="institution">St. Xavier's High School (2019)</p>
+      <p>PCM stream. Early interest in programming and tech competitions.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="section" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:shivangitiwari0127@gmail.com">shivangitiwari0127@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/shivangi-tiwari-98301226b" target="_blank">https://www.linkedin.com/in/shivangi-tiwari-98301226b</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Shivangi Tiwari </p>
+</footer>
+
+<!-- AOS Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Your Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
