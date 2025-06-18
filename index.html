@@ -6,27 +6,7 @@
   <title>Shivangi Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <style>
-    /* Background and Overlay */
-    #vanta-bg {
-      width: 100vw;
-      height: 100vh;
-      position: fixed;
-      z-index: -2;
-      top: 0;
-      left: 0;
-    }
-
-    #vanta-overlay {
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
-      position: fixed;
-      z-index: -1;
-      top: 0;
-      left: 0;
-    }
-  </style>
+  
 </head>
 <body>
 
@@ -92,9 +72,13 @@
   </div>
 </section>
 
-<section>
-  <h2>About Me</h2>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <!-- You can add a paragraph or content here -->
+  </div>
 </section>
+
 <!-- About -->
 <section id="about" class="section" ">
   
@@ -102,107 +86,120 @@
 </section>
 
 <!-- Skills -->
+<!-- Skills -->
 <section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span class="tag python" data-skill="Python"></span>
-    <span class="tag ml" data-skill="Machine Learning"></span>
-    <span class="tag nlp" data-skill="Natural Language Processing"></span>
-    <span class="tag tensorflow" data-skill="TensorFlow"></span>
-    <span class="tag DeepLearning" data-skill="DeepLearning"></span>
-    <span class="tag sklearn" data-skill="Scikit-learn"></span>
-    <span class="tag Html" data-skill="HTML"></span>
-    <span class="tag css" data-skill="CSS"></span>
-    <span class="tag javascript" data-skill="JavaScript"></span>
-    <span class="tag Github" data-skill="GitHub"></span>
-    <span class="tag Dbms" data-skill="DBMS"></span>
-    <span class="tag powerbi" data-skill="Power BI"></span>
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="tag python" data-skill="Python"></span>
+      <span class="tag ml" data-skill="Machine Learning"></span>
+      <span class="tag nlp" data-skill="Natural Language Processing"></span>
+      <span class="tag tensorflow" data-skill="TensorFlow"></span>
+      <span class="tag DeepLearning" data-skill="DeepLearning"></span>
+      <span class="tag sklearn" data-skill="Scikit-learn"></span>
+      <span class="tag Html" data-skill="HTML"></span>
+      <span class="tag css" data-skill="CSS"></span>
+      <span class="tag javascript" data-skill="JavaScript"></span>
+      <span class="tag Github" data-skill="GitHub"></span>
+      <span class="tag Dbms" data-skill="DBMS"></span>
+      <span class="tag powerbi" data-skill="Power BI"></span>
+    </div>
   </div>
 </section>
+
 
 <!-- Projects -->
 <section id="projects" class="section">
-  <h2 class="neon-title">Projects</h2>
-  <div class="project-grid">
-    <div class="project-card_1">
-      <h4>🌾 Crop Prediction System</h4>
-      <p>Hybrid ML system with 99% accuracy for crop recommendation & yield.</p>
-      
-    </div>
-    <div class="project-card_2">
-      <h4>🌐 Voice Translator (NLP)</h4>
-      <p>Live language translator using LSTM, Google APIs, and voice-to-text.</p>
-    </div>
-    <div class="project-card_3">
-      <h4>🧠 Mental Health Detection</h4>
-      <p>Real-time ML model for mental health prediction using mixed-method data.</p>
-      
+  <div class="container">
+    <h2 class="neon-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card_1">
+        <h4>🌾 Crop Prediction System</h4>
+        <p>Hybrid ML system with 99% accuracy for crop recommendation & yield.</p>
+      </div>
+      <div class="project-card_2">
+        <h4>🌐 Voice Translator (NLP)</h4>
+        <p>Live language translator using LSTM, Google APIs, and voice-to-text.</p>
+      </div>
+      <div class="project-card_3">
+        <h4>🧠 Mental Health Detection</h4>
+        <p>Real-time ML model for mental health prediction using mixed-method data.</p>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- Experience -->
+<!-- Experience -->
 <section id="experience" class="section" data-aos="fade-right">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <h4>AI/ML Project – Crop Recommendation & Yield Prediction</h4>
-      <p><em>Jan – May 2024</em></p>
-      <p>Developed and deployed a real-time hybrid ML model for crop recommendation and yield prediction. Used Naïve Bayes (99.54%), Decision Tree, and Random Forest to optimize recommendations.Applied regression and classification algorithms (Lasso, SVM) to predict yields with 98% accuracy across 101 countries.Addressed challenges in data heterogeneity and computational scalability to ensure practical deployment.</p>
-      
-</div>
+  <div class="container"> <!-- This is the key wrapper -->
+    <h2 style="text-align: center;">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>AI/ML Project – Crop Recommendation & Yield Prediction</h4>
+        <p><em>Jan – May 2024</em></p>
+        <p>
+          Developed and deployed a real-time hybrid ML model for crop recommendation and yield prediction. Used Naïve Bayes (99.54%), Decision Tree, and Random Forest to optimize recommendations...
+        </p>
+      </div>
 
-    <div class="timeline-item">
-      <h4>NLP Intern – ABVV</h4>
-      <p><em>Feb – Apr 2024</em></p>
-      <p>
-        Designed and implemented a speech-based NLP translation system using LSTM-based neural networks and Google Cloud Speech APIs.
-        Preprocessed multilingual datasets, handled audio-to-text conversion, and applied sequence-to-sequence models for translation.
-        Optimized the pipeline for latency and scalability, achieving &lt; 1s response time.
-        Documented the entire system and assisted in deploying it within an interactive web application.
-      </p>
+      <div class="timeline-item">
+        <h4>NLP Intern – ABVV</h4>
+        <p><em>Feb – Apr 2024</em></p>
+        <p>
+          Designed and implemented a speech-based NLP translation system using LSTM-based neural networks and Google Cloud APIs...
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
+
+
 <section id="education" class="section" data-aos="fade-left">
-  <h2 style="color: #4dd0e1; text-align: center; margin-bottom: 30px;">Education & Qualifications</h2>
-  <div class="edu-cards">
+  <div class="container">
+    <h2 style="color: #4dd0e1; text-align: center; margin-bottom: 30px;">Education & Qualifications</h2>
+    <div class="edu-cards">
 
-    <div class="edu-card">
-      <h3>UGC-NET (June & Dec 2024)</h3>
-      <p class="institution">NTA – Computer Science & Applications</p>
-      <p>Qualified for lectureship and research positions in two consecutive cycles.</p>
+      <div class="edu-card">
+        <h3>UGC-NET (June & Dec 2024)</h3>
+        <p class="institution">NTA – Computer Science & Applications</p>
+        <p>Qualified for lectureship and research positions in two consecutive cycles.</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>MCA</h3>
+        <p class="institution">Atal Bihari Vajpayee Vishwavidyalaya (2022–2024)</p>
+        <p>Graduated with 80%. Focused on AI, ML, and NLP with real-time project experience.</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>BSc in Computer Science</h3>
+        <p class="institution">Govt. E. Raghvendra Rao PG Science College (2019–2022)</p>
+        <p>Completed with First Class. Built a strong foundation in algorithms and systems.</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>Higher Secondary</h3>
+        <p class="institution">St. Xavier's High School (2019)</p>
+        <p>PCM stream. Early interest in programming and tech competitions.</p>
+      </div>
+
     </div>
-
-    <div class="edu-card">
-      <h3>MCA</h3>
-      <p class="institution">Atal Bihari Vajpayee Vishwavidyalaya (2022–2024)</p>
-      <p>Graduated with 80%. Focused on AI, ML, and NLP with real-time project experience.</p>
-    </div>
-
-    <div class="edu-card">
-      <h3>BSc in Computer Science</h3>
-      <p class="institution">Govt. E. Raghvendra Rao PG Science College (2019–2022)</p>
-      <p>Completed with First Class. Built a strong foundation in algorithms and systems.</p>
-    </div>
-
-    <div class="edu-card">
-      <h3>Higher Secondary</h3>
-      <p class="institution">St. Xavier's High School (2019)</p>
-      <p>PCM stream. Early interest in programming and tech competitions.</p>
-    </div>
-
   </div>
 </section>
 
 
 <!-- Contact -->
 <section id="contact" class="section" data-aos="fade-up">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:shivangitiwari0127@gmail.com">shivangitiwari0127@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/shivangi-tiwari-98301226b" target="_blank">https://www.linkedin.com/in/shivangi-tiwari-98301226b</a></p>
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:shivangitiwari0127@gmail.com">shivangitiwari0127@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shivangi-tiwari-98301226b" target="_blank">https://www.linkedin.com/in/shivangi-tiwari-98301226b</a></p>
+  </div>
 </section>
+
 
 <!-- Footer -->
 <footer>
