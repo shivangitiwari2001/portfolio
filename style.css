@@ -12,15 +12,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-body.light {
-  --bg-color: #f0f0f0;
-  --text-color: #111;
-}
 
-body.dark {
-  --bg-color: #111;
-  --text-color: #eee;
-}
 
 /* Vanta Background */
 #vanta-bg {
@@ -102,6 +94,17 @@ body.dark {
   font-size: 1.2rem;
   cursor: pointer;
   color: var(--text-color);
+}
+body.light {
+  color:white;
+  --bg-color: #4ec973;
+  
+}
+
+body.dark {
+  color:white
+  --bg-color: #111;
+  
 }
 
 /* Button Styles */
